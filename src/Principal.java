@@ -24,9 +24,18 @@ public class Principal {
         System.out.println("------------------------------------------------------------------------");
 
         System.out.println("Recomendações de Podcasts para você");
-        Podcast podcast = new Podcast("Flow Podcast", 2024, "425# BRTT");
-        podcast.setTemporadas(10);
-        podcast.setNumeroDeEpisodios(425);
-        podcast.exibeFichaTecnicaPodcast();
+        Podcast podcast1 = new Podcast("Flow Podcast", 2025, "425# BRTT");
+        podcast1.setTemporadas(10);
+        podcast1.setNumeroDeEpisodios(892);
+        podcast1.exibeFichaTecnicaPodcast();
+
+        System.out.println("------------------------------------------------------------------------");
+
+        Podcast podcast2 = new Podcast("Podpah", 2025, "892# Fernando Gil");
+        podcast2.setTemporadas(10);
+        podcast2.setNumeroDeEpisodios(425);
+        podcast2.exibeFichaTecnicaPodcast();
+
+
     }
 }

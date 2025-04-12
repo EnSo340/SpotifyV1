@@ -3,7 +3,7 @@ package modelos;
 public class Musica extends Audio {
 
     String album;
-    private int posicaoNaPlaylist;
+
 
 
     public Musica(String autor, int anoDeLancamento, String faixa) {
@@ -24,12 +24,5 @@ public class Musica extends Audio {
         System.out.println("Álbum: " + album);
         System.out.println("Ano de Lançamento: " + anoDeLancamento);
         System.out.println("Duração: " + inicioAudio + " - " + finalAudio);
-    }
-    public String toString() {
-        return "#" + posicaoNaPlaylist + faixa;
-    }
-
-    public void setPosicaoNaPlaylist(int posicao) {
-        this.posicaoNaPlaylist = posicao;
     }
 }

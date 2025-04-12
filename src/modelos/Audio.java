@@ -3,7 +3,7 @@ package modelos;
 public class Audio {
 
 
-    int posicaoNaPlaylist;
+
     int anoDeLancamento;
     String nome;
     String autor;
@@ -11,13 +11,6 @@ public class Audio {
     String finalAudio;
     String faixa;
 
-    public int getPosicaoNaPlaylist() {
-        return posicaoNaPlaylist;
-    }
-
-    public void setPosicaoNaPlaylist(int posicaoNaPlaylist) {
-        this.posicaoNaPlaylist = posicaoNaPlaylist;
-    }
 
     public Audio(String autor, int anoDeLancamento, String faixa) {
 
@@ -76,4 +69,6 @@ public class Audio {
     public  void setFaixa(String faixa) {
 
     }
+
+
 }

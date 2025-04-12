@@ -16,27 +16,30 @@ public class PrincipalComPlaylists {
 
         Musica musica3 = new Musica("Imogen Heap", 2005, "Headlock");
 
+        Musica musica4 = new Musica("Teto", 2025, "Yes or No");
+
         ArrayList<Audio> playlist = new ArrayList<>();
         playlist.add(musica1);
         playlist.add(musica2);
         playlist.add(musica3);
+        playlist.add(musica4);
 
-        for (int i = 0; i < playlist.size(); i++) {
-            Musica musica = (Musica) playlist.get(i);
-            musica.setPosicaoNaPlaylist(i + 1);
-        }
 
-        System.out.println("Playlist ordenada:");
-        for (Audio item : playlist) {
+        exibirPlaylist(playlist);
+    }
 
-            for (int i = 0; i < playlist.size(); i++) {
-                Musica musica = (Musica) playlist.get(i);
-                musica.setPosicaoNaPlaylist(i + 1);
 
+        public static void exibirPlaylist (ArrayList < Audio > playlist) {
+            System.out.println("Músicas na Playlist: " + playlist.size());
+            for (Audio audio : playlist) {
+                if (audio instanceof Musica) {
+                    Musica musica = (Musica) audio;
+                    System.out.println("Título: " + musica.getFaixa() + "\n" + "Cantor: " + musica.getAutor());
+                    System.out.println("------------------------------------------------------------------");
+                }
             }
-            System.out.println(item.getPosicaoNaPlaylist);
-            System.out.println(item.getFaixa());
+
         }
 
     }
-        }
+
